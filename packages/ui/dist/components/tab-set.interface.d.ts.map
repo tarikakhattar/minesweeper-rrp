@@ -1,0 +1,1 @@
+{"version":3,"file":"tab-set.interface.d.ts","sourceRoot":"","sources":["../../../../src/components/tab-set.interface.ts"],"names":[],"mappings":"AAAA,MAAM,MAAM,UAAU,GAAG,MAAM,CAAC,MAAM,EAAE,eAAe,CAAC,CAAC;AAEzD,MAAM,WAAW,eAAe;IAC/B,WAAW,EAAE,MAAM,CAAC;IACpB,QAAQ,EAAE,OAAO,CAAC;CAClB"}

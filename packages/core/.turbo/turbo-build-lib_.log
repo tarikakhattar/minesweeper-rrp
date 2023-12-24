@@ -1,0 +1,29 @@
+
+> @w2k/core@4.1.0 build-lib_ /Users/tarika/Library/CloudStorage/OneDrive-Personal/minesweeper/packages/core
+> vite build
+
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:directive[39m[22m[0m[0m	enabled directives:
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:directive[39m[22m[0m[0m	pakk:not-distributed
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk[39m[22m[0m[0m	examining workspace package at /Users/tarika/Library/CloudStorage/OneDrive-Personal/minesweeper/packages/core/package.json
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:export[39m[22m[0m[0m	detected package exports [
+  [32m'index.ts'[39m
+]
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk[39m[22m[0m[0m	preparation phase took 25ms to finish
+vite v5.0.0 building for production...
+transforming...
+✓ 4 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.js  8.66 kB │ gzip: 2.23 kB
+dist/index.cjs  10.24 kB │ gzip: 2.78 kB
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk[39m[22m[0m[0m	processing workspace package at /Users/tarika/Library/CloudStorage/OneDrive-Personal/minesweeper/packages/core/package.json
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:export-static[39m[22m[0m[0m	copy all static files []
+✓ built in 43ms
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:bin[39m[22m[0m[0m	Creating shims for bins in es/module format
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:copy-license[39m[22m[0m[0m	Copied license file from /Users/tarika/Library/CloudStorage/OneDrive-Personal/minesweeper/license
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:metadata[39m[22m[0m[0m	filling metadata for distributed packageJson
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:sort[39m[22m[0m[0m	sorting packageJson...
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk[39m[22m[0m[0m	writing updated package.json to /Users/tarika/Library/CloudStorage/OneDrive-Personal/minesweeper/packages/core/dist/package.json
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:sort[39m[22m[0m[0m	sorting packageJson...
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk[39m[22m[0m[0m	writing updated package.json to /Users/tarika/Library/CloudStorage/OneDrive-Personal/minesweeper/packages/core/package.json
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk[39m[22m[0m[0m	update phase took ~281ms to finish

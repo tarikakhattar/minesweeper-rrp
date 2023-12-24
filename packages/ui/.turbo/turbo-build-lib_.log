@@ -1,0 +1,32 @@
+
+> @w2k/ui@4.1.0 build-lib_ /Users/tarika/Library/CloudStorage/OneDrive-Personal/minesweeper/packages/ui
+> pakk --svelte --target-package-json-kind development && svelte-package --input src && pakk --svelte --target-package-json-kind distribution
+
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk[39m[22m[0m[0m	svelte mode: forcing 'es' only output format
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:directive[39m[22m[0m[0m	enabled directives:
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:directive[39m[22m[0m[0m	pakk:not-distributed
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:export[39m[22m[0m[0m	detected package exports [
+  [32m'components.ts'[39m,
+  [32m'index.ts'[39m
+]
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:bin[39m[22m[0m[0m	Creating shims for bins in es/module format
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:sort[39m[22m[0m[0m	sorting packageJson...
+src -> dist
+@sveltejs/package found the following issues while packaging your library:
+Avoid usage of `$app/environment` in your code, if you want to library to work for people not using SvelteKit (only regular Svelte, for example). Consider using packages like `esm-env` instead which provide cross-bundler-compatible environment variables.
+
+You are using SvelteKit-specific imports in your code, but you have not declared a dependency on `@sveltejs/kit` in your `package.json`. Add it to your `dependencies` or `peerDependencies`.
+
+You are using Svelte components or Svelte-specific imports in your code, but you have not declared a dependency on `svelte` in your `package.json`. Add it to your `dependencies` or `peerDependencies`.
+
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk[39m[22m[0m[0m	svelte mode: forcing 'es' only output format
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:directive[39m[22m[0m[0m	enabled directives:
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:directive[39m[22m[0m[0m	pakk:not-distributed
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:export[39m[22m[0m[0m	detected package exports [
+  [32m'components.ts'[39m,
+  [32m'index.ts'[39m
+]
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:export-static[39m[22m[0m[0m	copy all static files []
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:copy-license[39m[22m[0m[0m	Copied license file from /Users/tarika/Library/CloudStorage/OneDrive-Personal/minesweeper/license
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:metadata[39m[22m[0m[0m	filling metadata for distributed packageJson
+[34m[1mINFO[22m[39m[0m[0m:[1m[37m	pakk:sort[39m[22m[0m[0m	sorting packageJson...

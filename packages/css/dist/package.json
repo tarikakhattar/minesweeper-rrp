@@ -1,0 +1,102 @@
+{
+	"name": "@w2k/css",
+	"description": "A Windows 2000 style Design System for Svelte based on 98.css",
+	"version": "4.1.0",
+	"license": "mit",
+	"archetype": {
+		"platform": "web",
+		"framework": "svelte",
+		"language": "ts",
+		"kind": "lib"
+	},
+	"keywords": [
+		"98.css",
+		"css",
+		"managed-by-autotool",
+		"svelte"
+	],
+	"author": {
+		"email": "alexaegis@gmail.com",
+		"name": "Alex Aegis",
+		"url": "https://github.com/AlexAegis"
+	},
+	"homepage": "https://github.com/AlexAegis/minesweeper",
+	"repository": {
+		"url": "https://github.com/AlexAegis/minesweeper",
+		"type": "git",
+		"directory": "packages/css"
+	},
+	"bugs": {
+		"email": "alexaegis@gmail.com",
+		"url": "https://github.com/AlexAegis/minesweeper/issues"
+	},
+	"type": "module",
+	"config": {
+		"engine-strict": true
+	},
+	"engines": {
+		"node": ">=18.10.0",
+		"pnpm": ">=8.0.0"
+	},
+	"scripts": {
+		"lint:depcheck": "turbo run lint:depcheck_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:depcheck_": "depcheck",
+		"lint:es": "turbo run lint:es_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:es_": "eslint --max-warnings=0 --fix --no-error-on-unmatched-pattern .",
+		"lint:format": "turbo run lint:format_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:format_": "prettier --cache-location .cache/prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss --check .",
+		"lint:md": "turbo run lint:md_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:md_": "remark --frail --no-stdout --silently-ignore .",
+		"lint:style": "turbo run lint:style_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:style:css": "turbo run lint:style:css_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:style:css_": "stylelint --cache true --cache-strategy content --cache-location .cache/stylelintcache-css --allow-empty-input '**/*.css'",
+		"lint:style:html": "turbo run lint:style:html_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:style:html_": "stylelint --customSyntax=postcss-html --cache true --cache-strategy content --cache-location .cache/stylelintcache-html --allow-empty-input '**/*.{html,svelte,vue,astro,xml,php}'",
+		"lint:style:scss": "turbo run lint:style:scss_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:style:scss_": "stylelint --customSyntax=postcss-scss --cache true --cache-strategy content --cache-location .cache/stylelintcache-scss --allow-empty-input '**/*.scss'",
+		"lint:svelte": "turbo run lint:svelte_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:svelte_": "svelte-check --tsconfig ./tsconfig.json",
+		"lint:tsc": "turbo run lint:tsc_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"lint:tsc_": "tsc --noEmit",
+		"test": "turbo run test_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"test_": "vitest --passWithNoTests --coverage --run",
+		"test:watch": "vitest --passWithNoTests --coverage",
+		"all": "BUILD_REASON='publish' turbo run all_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"build": "turbo run build-lib_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"build-lib_": "pakk --svelte --target-package-json-kind development && svelte-package --input src && pakk --svelte --target-package-json-kind distribution",
+		"format": "turbo run format_ --concurrency 16 --cache-dir .cache/turbo --filter @w2k/css",
+		"format_": "prettier --cache-location .cache/prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss --write .",
+		"preview": "vite preview"
+	},
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"import": "./index.js",
+			"svelte": "./index.js",
+			"default": "./index.js"
+		},
+		"./fs-tahoma-8px": "./static/fonts/fs-tahoma-8px/fs-tahoma-8px.woff2",
+		"./license": "./static/fonts/fs-tahoma-8px/license.txt",
+		"./readme": "./static/fonts/fs-tahoma-8px/readme.txt",
+		"./w2k": "./static/w2k.scss"
+	},
+	"dependencies": {
+		"98.css": "^0.1.20"
+	},
+	"devDependencies": {
+		"@alexaegis/eslint-config-svelte": "^0.8.4",
+		"@alexaegis/eslint-config-vitest": "^0.8.4",
+		"@alexaegis/stylelint-config": "^0.8.4",
+		"@alexaegis/svelte-config": "^0.8.4",
+		"@alexaegis/ts": "^0.8.4",
+		"@alexaegis/vitest": "^0.8.4",
+		"@pakk/cli": "^0.7.0",
+		"@sveltejs/package": "^2.2.2",
+		"@types/node": "^20.9.2",
+		"stylelint": "^15.11.0",
+		"svelte": "^4.2.5",
+		"svelte-check": "^3.6.0",
+		"svelte-preprocess": "^5.1.0",
+		"vitest": "^0.34.6"
+	}
+}

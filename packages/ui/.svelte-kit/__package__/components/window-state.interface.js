@@ -1,0 +1,31 @@
+export const defaultCommonProgramWindowPreferences = {
+    maximized: false,
+    minimized: false,
+    resizable: true,
+    showMinimize: true,
+    minimizeEnabled: true,
+    showMaximize: true,
+    maximizeEnabled: true,
+    showClose: true,
+    closeEnabled: true,
+    showHelp: false,
+    helpEnabled: false,
+};
+export const initialWindowState = {
+    ...defaultCommonProgramWindowPreferences,
+    processId: '-2',
+    title: '...',
+    titleBarIcon: '',
+    active: true,
+    height: 0,
+    width: 0,
+    position: {
+        x: 160,
+        y: 120,
+    },
+    minWidth: 120,
+    minHeight: 45,
+    fitContent: false,
+    invisible: false,
+    zIndex: 10,
+};
