@@ -1,6 +1,3 @@
-# [Minesweeper for RRP]
-
-
-<!-- markdownlint-enable MD013 -->
+# Minesweeper for RRP
 
 A classic version of Minesweeper built for RRP :)
